@@ -5,19 +5,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Party Supplies E-Commerce</title>
 </head>
-<body>
-  <!-- header -->
-  <header>
-    <div class="logo">PS 🎈</div>
-    <input type="text" class="search-bar" placeholder="Search for party supplies...">
-    <div class="icon">
-      <span class="icon-cart">🛒</span>
-      <span class="icon-user">👤</span>
-    </div>
-  </header>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="logo">PS 🎈</div>
+      <input type="text" class="search-bar" placeholder="Search for party supplies...">
+      <div class="icon">
+        <span class="icon-cart">🛒</span>
+        <span class="icon-user">👤</span>
+      </div>
+    </header>
 
-  
+    <!-- Main content -->
+    <main>
+      <!-- Corousel Section -->
+      <h2>Popular Party Supplies</h2>
+      <div class="corousel">
+        <img src="balloons.jpg" alt="Balloons" class="active">
+        <img src="decorations.jpg" alt="Decorations" class="active">
+        <img src="tableware.jpg" alt="Tableware" class="active">
+        <img src="party-favors.jpg" alt="Party Favors" class="active">
+      </div>
+
+      <section>
+        <!-- Categories Section -->
+
+        <h2>Shop by Category</h2>
+        <div class="category-card" onclick="filterCategory('Decorations')">Decorations</div>
+        <div class="category-card" onclick="filterCategory('Balloons')">Balloons</div>
+        <div class="category-card" onclick="filterCategory('Tableware')">Tableware</div>
+        <div class="category-card" onclick="filterCategory('Party Favors')">Party Favors</div>
+      </section>
+
+      <!-- Products Section -->
+        <section class="products">
+          <h2>Products</h2>
+          <div class="product-card" onclick="addToCart('Party Balloons')">
+            <img src="ballons.jpg" alt="Party Balloons">
+            <p>Party Balloons</p>
+            <span>$12.99</span>
+            <button>Add to Cart</button>
+          </div>
+          <div class="product-card" onclick="addToCart('Tableware Set')">
+            <img src="tableware.jpg" alt="Tableware Set">
+            <p>Tableware Set</p>
+            <span>$25.99</span>
+            <button>Add to Cart</button>
+          </div>
+          <div class="product-card" onclick="addToCart('Decorations Items')">
+            <img src="decorations.jpg" alt="Decorations Items">
+          </div>
+        </section>
+
+    </main>
 
 
-</body>
+  </body>
 </html>
