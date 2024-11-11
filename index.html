@@ -21,11 +21,15 @@
     <main>
       <!-- Corousel Section -->
       <h2>Popular Party Supplies</h2>
-      <div class="corousel">
-        <img src="balloons.jpg" alt="Balloons" class="active">
-        <img src="decorations.jpg" alt="Decorations" class="active">
-        <img src="tableware.jpg" alt="Tableware" class="active">
-        <img src="party-favors.jpg" alt="Party Favors" class="active">
+      <div class="carousel">
+        <button class="carousel-btn prev-btn">❮</button>
+        <div class="carousel-images">
+            <img src="images/balloons/Balloons1.jpg" class="active" alt="Balloons">
+            <img src="images/decoration/Decoration1.jpg" alt="Decorations">
+            <img src="images/tableware/Tableware1.jpg" alt="Tableware">
+            <img src="images/party-favors/party-favors1.jpg" alt="Party Favors">
+        </div>
+        <button class="carousel-btn next-btn">❯</button>
       </div>
 
       <section>
@@ -41,25 +45,57 @@
       <!-- Products Section -->
         <section class="products">
           <h2>Products</h2>
-          <div class="product-card" onclick="addToCart('Party Balloons')">
-            <img src="ballons.jpg" alt="Party Balloons">
-            <p>Party Balloons</p>
-            <span>$12.99</span>
-            <button>Add to Cart</button>
-          </div>
-          <div class="product-card" onclick="addToCart('Tableware Set')">
-            <img src="tableware.jpg" alt="Tableware Set">
-            <p>Tableware Set</p>
-            <span>$25.99</span>
-            <button>Add to Cart</button>
-          </div>
-          <div class="product-card" onclick="addToCart('Decorations Items')">
-            <img src="decorations.jpg" alt="Decorations Items">
-            <p>Decorations Items</p>
-            <span>$25.99</span>
-            <button>Add to Cart</button>
-          </div>
-        </section>
+          <div class="product-grid">
+            <div class="product-card" onclick="addToCart('Party Balloons')">
+                <img src="balloons.jpg" alt="Party Balloons">
+                <p>Party Balloons</p>
+                <span>$12.99</span>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card" onclick="addToCart('Tableware Set')">
+                <img src="tableware.jpg" alt="Tableware Set">
+                <p>Tableware Set</p>
+                <span>$25.99</span>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card" onclick="addToCart('Decorative Items')">
+                <img src="decorations.jpg" alt="Decorative Items">
+                <p>Decorative Items</p>
+                <span>$18.99</span>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card" onclick="addToCart('Confetti Popper')">
+                <img src="confetti.jpg" alt="Confetti Popper">
+                <p>Confetti Popper</p>
+                <span>$9.99</span>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card" onclick="addToCart('Birthday Banner')">
+                <img src="banner.jpg" alt="Birthday Banner">
+                <p>Birthday Banner</p>
+                <span>$15.99</span>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card" onclick="addToCart('Candle Set')">
+                <img src="candles.jpg" alt="Candle Set">
+                <p>Candle Set</p>
+                <span>$5.99</span>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card" onclick="addToCart('Party Hats')">
+                <img src="party-hats.jpg" alt="Party Hats">
+                <p>Party Hats</p>
+                <span>$6.99</span>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card" onclick="addToCart('Table Cover')">
+                <img src="table-cover.jpg" alt="Table Cover">
+                <p>Table Cover</p>
+                <span>$11.99</span>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+      </section>
 
     </main>
 
