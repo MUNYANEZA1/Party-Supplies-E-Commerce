@@ -5,3 +5,30 @@ body {
   padding: 0;
   background-color: #fff4cc;
 }
+
+/* Header */
+header {
+  background-color: #ffdd57;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo{
+  width: 50%;
+  padding: 8px;
+  border-radius: 5px;
+  color: #ff5555;
+}
+
+.search-bar{
+  width: 50%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.icons{
+  font-size: 24px;
+}
