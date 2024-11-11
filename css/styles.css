@@ -52,3 +52,26 @@ header {
 .carousel img.active{
   display: block;
 }
+
+/* categories */
+.categories{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.category-card {
+  background-color: #87ceeb;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  font-family: 'Comic San MS', sans-serif;
+  cursor: pointer;
+  transform: transform 0.3s;
+}
+
+.category-card:hover{
+  transform: scale(1.05);
+}
