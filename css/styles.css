@@ -75,3 +75,40 @@ header {
 .category-card:hover{
   transform: scale(1.05);
 }
+
+/* Products */
+.products{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.product-card {
+  background-color: #fff;
+  width: 200px;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.product-card img{
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product-card button{
+  background-color: #ff5555;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.product-card:hover{
+  transform: scale(1.05);
+}
