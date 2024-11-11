@@ -112,3 +112,12 @@ header {
 .product-card:hover{
   transform: scale(1.05);
 }
+
+/* Footer */
+footer{
+  background-color: #ffdd57;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #444;
+}
