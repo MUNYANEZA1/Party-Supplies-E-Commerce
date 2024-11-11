@@ -32,3 +32,23 @@ header {
 .icons{
   font-size: 24px;
 }
+
+/* Carrousel */
+
+.carousel {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+}
+
+.carousel  img{
+  width: 100%;
+  height: 100%;
+  display: none;
+  object-fit: cover;
+}
+
+.carousel img.active{
+  display: block;
+}
