@@ -3,106 +3,91 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Party Supplies E-Commerce</title>
+  <title>Party Supplies Store</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Comic+Sans+MS&display=swap">
 </head>
-  <body>
-    <!-- header -->
-    <header>
-      <div class="logo">PS 🎈</div>
-      <input type="text" class="search-bar" placeholder="Search for party supplies...">
-      <div class="icon">
-        <span class="icon-cart">🛒</span>
-        <span class="icon-user">👤</span>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">PS <span class="confetti">🎉</span></div>
+    <input type="text" class="search-bar" id="search-bar" placeholder="Search for products...">
+    <div class="icon">
+      <span class="icon-cart" id="cart-icon">🛒 (<span id="cart-count">0</span>)</span>
+      <span class="icon-user">👤</span>
+    </div>
+  </header>
+
+  <!-- Carousel -->
+  <div class="carousel">
+    <button class="carousel-btn prev-btn">❮</button>
+    <div class="carousel-images">
+      <img src="images/banner.jpg" alt="Party Banner" class="active">
+      <img src="images/decorations.jpg" alt="Party Decorations">
+      <img src="images/balloons.jpg" alt="Party Balloons">
+      <img src="images/year.jpg" alt="Happy New Year">
+    </div>
+    <button class="carousel-btn next-btn">❯</button>
+  </div>
+
+  <!-- Categories Section -->
+  <section class="categories-section">
+    <h2>Categories</h2>
+    <div class="category-container">
+      <button class="category-card" data-category="Decorations">Decorations</button>
+      <button class="category-card" data-category="Balloons">Balloons</button>
+      <button class="category-card" data-category="Tableware">Tableware</button>
+      <button class="category-card" data-category="Party Favors">Party Favors</button>
+      <button class="category-card" data-category="All">All</button>
+    </div>
+  </section>
+
+  <!-- Featured Products Section -->
+  <section id="featured-products">
+    <h2>Featured Products</h2>
+    <div class="product-container" id="product-container">
+      <!-- Product Cards will be dynamically inserted here by JavaScript -->
+    </div>
+  </section>
+
+  <!-- Cart Modal -->
+  <div id="cart-modal" class="cart-modal">
+    <h2>Shopping Cart</h2>
+    <div id="cart-items"></div>
+    <p id="total-price"></p>
+    <button id="close-cart">Close Cart</button>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-about">
+        <h3>About Party Supplies</h3>
+        <p>Your go-to store for all your party needs. We provide high-quality decorations, tableware, and party favors for every occasion.</p>
       </div>
-    </header>
-
-    <!-- Main content -->
-    <main>
-      <!-- Corousel Section -->
-      <h2>Popular Party Supplies</h2>
-      <div class="carousel">
-        <button class="carousel-btn prev-btn">❮</button>
-        <div class="carousel-images">
-            <img src="images/balloons/Balloons1.jpg" class="active" alt="Balloons">
-            <img src="images/decoration/Decoration1.jpg" alt="Decorations">
-            <img src="images/tableware/Tableware1.jpg" alt="Tableware">
-            <img src="images/party-favors/party-favors1.jpg" alt="Party Favors">
-        </div>
-        <button class="carousel-btn next-btn">❯</button>
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
       </div>
+      <div class="footer-contact">
+        <h3>Contact Us</h3>
+        <p>Email: support@partysupplies.com</p>
+        <p>Phone: +250 780 480 243</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Party Supplies. All Rights Reserved.</p>
+    </div>
+  </footer>
 
-      <section>
-        <!-- Categories Section -->
+  <script src="js/carousel.js" type="module"></script>
+  <script src="js/products.js" type="module"></script>
+  <script src="js/scripts.js" type="module"></script>
 
-        <h2>Shop by Category</h2>
-        <div class="category-card" onclick="filterCategory('Decorations')">Decorations</div>
-        <div class="category-card" onclick="filterCategory('Balloons')">Balloons</div>
-        <div class="category-card" onclick="filterCategory('Tableware')">Tableware</div>
-        <div class="category-card" onclick="filterCategory('Party Favors')">Party Favors</div>
-      </section>
-
-      <!-- Products Section -->
-        <section class="products">
-          <h2>Products</h2>
-          <div class="product-grid">
-            <div class="product-card" onclick="addToCart('Party Balloons')">
-                <img src="balloons.jpg" alt="Party Balloons">
-                <p>Party Balloons</p>
-                <span>$12.99</span>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card" onclick="addToCart('Tableware Set')">
-                <img src="tableware.jpg" alt="Tableware Set">
-                <p>Tableware Set</p>
-                <span>$25.99</span>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card" onclick="addToCart('Decorative Items')">
-                <img src="decorations.jpg" alt="Decorative Items">
-                <p>Decorative Items</p>
-                <span>$18.99</span>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card" onclick="addToCart('Confetti Popper')">
-                <img src="confetti.jpg" alt="Confetti Popper">
-                <p>Confetti Popper</p>
-                <span>$9.99</span>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card" onclick="addToCart('Birthday Banner')">
-                <img src="banner.jpg" alt="Birthday Banner">
-                <p>Birthday Banner</p>
-                <span>$15.99</span>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card" onclick="addToCart('Candle Set')">
-                <img src="candles.jpg" alt="Candle Set">
-                <p>Candle Set</p>
-                <span>$5.99</span>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card" onclick="addToCart('Party Hats')">
-                <img src="party-hats.jpg" alt="Party Hats">
-                <p>Party Hats</p>
-                <span>$6.99</span>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card" onclick="addToCart('Table Cover')">
-                <img src="table-cover.jpg" alt="Table Cover">
-                <p>Table Cover</p>
-                <span>$11.99</span>
-                <button>Add to Cart</button>
-            </div>
-        </div>
-      </section>
-
-    </main>
-
-    <!-- Footer -->
-     <footer>
-      <p>&copy; 2024 Party Supplies | Follow us on social media 🎉</p>
-     </footer>
-
-  </body>
+</body>
 </html>

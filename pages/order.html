@@ -3,27 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Order Details - Party Supplies</title>
-  <link rel="stylesheet" href="../css/styles.css">
+  <title>Order</title>
+  <link rel="stylesheet" href="../css/order.css">
 </head>
 <body>
   <header>
-    <h1>Party Supplies - Order Details</h1>
+    <h1>Your Order</h1>
   </header>
-  <main>
-    <section class="order-summary">
-      <h2>Your Order</h2>
-      <div class="order-items">
-        <!-- JavaScript will generate order items here -->
-      </div>
-      <button>Proceed to checkout</button>
-    </section>
-  </main>
 
-  <footer>
-    <p>&copy; 2024 Party Supplies</p>
-  </footer>
+  <div id="order-container"></div>
 
-  <script src="../js/order.js"></script>
+  <button id="checkout-button">Proceed to Checkout</button>
+
+  <script type="module" src="../js/order.js"></script>
 </body>
 </html>
