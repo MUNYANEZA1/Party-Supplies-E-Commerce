@@ -1,3 +1,4 @@
+//script.js
 import { products } from './products.js';
 
 // Function to display products dynamically

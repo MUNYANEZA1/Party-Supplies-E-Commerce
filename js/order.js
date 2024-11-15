@@ -1,3 +1,5 @@
+//order.js
+
 const cart = JSON.parse(localStorage.getItem('cart')) || [];
 const orderContainer = document.getElementById('order-container');
 

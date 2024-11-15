@@ -1,9 +1,11 @@
+//products.js
+
 export const products = [
   // Decorations
   {
     id: "decor-01",
     name: "Birthday Banner",
-    image: "../images/banner.jpg",
+    image: "images/banner.PNG",
     price: "$15.99",
     description: "Celebrate with a bright, festive banner.",
     category: "Decorations"
@@ -11,7 +13,7 @@ export const products = [
   {
     id: "decor-02",
     name: "Confetti Popper",
-    image: "../images/confetti.jpg",
+    image: "images/confetti.png",
     price: "$9.99",
     description: "Add sparkle with our confetti poppers!",
     category: "Decorations"
@@ -19,7 +21,7 @@ export const products = [
   {
     id: "decor-03",
     name: "Streamer Set",
-    image: "../images/streamers.jpg",
+    image: "images/streamers.png",
     price: "$8.49",
     description: "Streamers in assorted colors.",
     category: "Decorations"
@@ -27,7 +29,7 @@ export const products = [
   {
     id: "decor-04",
     name: "Party Signs",
-    image: "../images/party-signs.jpg",
+    image: "images/party-signs.png",
     price: "$8.99",
     description: "Directional signs to guide guests.",
     category: "Decorations"
@@ -35,7 +37,7 @@ export const products = [
   {
     id: "decor-05",
     name: "Centerpieces",
-    image: "../images/centerpieces.jpg",
+    image: "images/centerpieces.png",
     price: "$14.99",
     description: "Eye-catching table centerpieces.",
     category: "Decorations"
@@ -45,7 +47,7 @@ export const products = [
   {
     id: "balloons-01",
     name: "Party Balloons",
-    image: "../images/balloons.jpg",
+    image: "images/ballons.png",
     price: "$12.99",
     description: "Colorful balloons for every occasion.",
     category: "Balloons"
@@ -53,7 +55,7 @@ export const products = [
   {
     id: "balloons-02",
     name: "LED Balloons",
-    image: "../images/led-balloons.jpg",
+    image: "images/led-balloons.png",
     price: "$9.99",
     description: "Glow-in-the-dark LED balloons.",
     category: "Balloons"
@@ -61,7 +63,7 @@ export const products = [
   {
     id: "balloons-03",
     name: "Balloon Arch Kit",
-    image: "../images/arch-kit.jpg",
+    image: "images/arch-kit.png",
     price: "$24.99",
     description: "DIY balloon arch kit for celebrations.",
     category: "Balloons"
@@ -69,7 +71,7 @@ export const products = [
   {
     id: "balloons-04",
     name: "Birthday Crowns",
-    image: "../images/birthday-crowns.jpg",
+    image: "images/birthday-crowns.png",
     price: "$6.99",
     description: "Birthday crowns for all ages.",
     category: "Balloons"
@@ -79,7 +81,7 @@ export const products = [
   {
     id: "tableware-01",
     name: "Tableware Set",
-    image: "../images/tableware.jpg",
+    image: "images/tableware.png",
     price: "$25.99",
     description: "Elegant tableware for party decor.",
     category: "Tableware"
@@ -87,7 +89,7 @@ export const products = [
   {
     id: "tableware-02",
     name: "Plastic Utensils",
-    image: "../images/utensils.jpg",
+    image: "images/utensils.jpg",
     price: "$4.99",
     description: "Disposable utensils for easy cleanup.",
     category: "Tableware"
@@ -95,7 +97,7 @@ export const products = [
   {
     id: "tableware-03",
     name: "Party Cups",
-    image: "../images/party-cups.jpg",
+    image: "images/party-cups.PNG",
     price: "$4.99",
     description: "Disposable cups in various colors.",
     category: "Tableware"
@@ -103,7 +105,7 @@ export const products = [
   {
     id: "tableware-04",
     name: "Napkins",
-    image: "../images/napkins.jpg",
+    image: "images/napkins.png",
     price: "$3.99",
     description: "Colorful napkins for every theme.",
     category: "Tableware"
@@ -111,7 +113,7 @@ export const products = [
   {
     id: "tableware-05",
     name: "Table Cover",
-    image: "../images/table-cover.jpg",
+    image: "images/table-cover.png",
     price: "$11.99",
     description: "Protect and decorate with our table covers.",
     category: "Tableware"
@@ -121,7 +123,7 @@ export const products = [
   {
     id: "party-favors-01",
     name: "Party Hats",
-    image: "../images/party-hats.jpg",
+    image: "images/party-hats.png",
     price: "$6.99",
     description: "Fun and festive party hats for all ages.",
     category: "Party Favors"
@@ -129,7 +131,7 @@ export const products = [
   {
     id: "party-favors-02",
     name: "Party Bags",
-    image: "../images/party-bags.jpg",
+    image: "images/party-bags.png",
     price: "$6.49",
     description: "Gift bags for party favors.",
     category: "Party Favors"
@@ -137,7 +139,7 @@ export const products = [
   {
     id: "party-favors-03",
     name: "Photo Booth Props",
-    image: "../images/photo-props.jpg",
+    image: "images/photo-props.png",
     price: "$9.99",
     description: "Fun props for your photo booth.",
     category: "Party Favors"
@@ -145,7 +147,7 @@ export const products = [
   {
     id: "party-favors-04",
     name: "Mini Piñatas",
-    image: "../images/mini-pinatas.jpg",
+    image: "images/mini-pinates.png",
     price: "$12.99",
     description: "Small pinatas for treats.",
     category: "Party Favors"
@@ -153,7 +155,7 @@ export const products = [
   {
     id: "party-favors-05",
     name: "Party Games Kit",
-    image: "../images/games-kit.jpg",
+    image: "images/games-kit.png",
     price: "$14.99",
     description: "Fun games for all ages.",
     category: "Party Favors"
@@ -161,7 +163,7 @@ export const products = [
   {
     id: "party-favors-06",
     name: "Candle Set",
-    image: "../images/candles.jpg",
+    image: "images/candles.png",
     price: "$5.99",
     description: "Colorful candles for every cake.",
     category: "Party Favors"
@@ -169,7 +171,7 @@ export const products = [
   {
     id: "party-favors-07",
     name: "Costume Accessories",
-    image: "../images/costumes.jpg",
+    image: "images/costumes.png",
     price: "$15.99",
     description: "Accessories to match party themes.",
     category: "Party Favors"
@@ -177,7 +179,7 @@ export const products = [
   {
     id: "party-favors-08",
     name: "Gift Wrapping Paper",
-    image: "../images/wrapping-paper.jpg",
+    image: "images/wrapping-paper.jpg",
     price: "$3.99",
     description: "Beautiful wrapping paper for presents.",
     category: "Party Favors"
@@ -185,7 +187,7 @@ export const products = [
   {
     id: "party-favors-09",
     name: "Party Sashes",
-    image: "../images/party-sashes.jpg",
+    image: "images/party-sashes.png",
     price: "$4.99",
     description: "Decorative sashes for special guests.",
     category: "Party Favors"
